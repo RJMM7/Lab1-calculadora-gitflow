@@ -15,6 +15,26 @@ int main() {
     cout << "Choose a mathematical operation: "; cin >> option;
 
     cout << "============================" << endl;
+
+    switch (option) {
+        case 1:
+            cout << "You chose '+'. ";
+            resultSum = a + b;
+            cout << "The result for: " << a << " + " << b << " is: " << resultSum;
+            break;
+        case 2:
+            cout << "You chose '-'. ";
+            resultSubtraction = a - b;
+            cout << "The result for: " << a << " - " << b << " is: " << resultSubtraction;
+            break;
+        case 5:
+            cout << "Leaving...";
+            break;
+
+        default:
+            cout << "Invalid selection";
+            break;
+    }
     
     return 0;
 }
