@@ -27,6 +27,32 @@ int main() {
             resultSubtraction = a - b;
             cout << "The result for: " << a << " - " << b << " is: " << resultSubtraction;
             break;
+            case 3:
+            cout << "ingrese el valor de a" << endl;
+        cin >> a;
+        cout << "ingrese el valor de b" << endl;
+        cin >> b;
+        resultMultiplication = a * b;
+        cout << " el resultado es:" << resultMultiplication << endl;
+        break;
+
+        case 4: 
+        cout << "ingrese el valor de a" << endl;
+        cin >> a;
+        cout << "ingrese el valor de b" << endl;
+        cin >> b;
+        if (b == 0)
+        {
+            cout << " math error" << endl;
+            break;
+        }
+        else
+        {
+            resultDivision = a / b;
+            cout << " el resultado es:" << resultDivision << endl;
+            break;
+        }
+
         case 5:
             cout << "Leaving...";
             break;
