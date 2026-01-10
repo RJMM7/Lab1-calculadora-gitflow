@@ -28,19 +28,13 @@ int main() {
             cout << "The result for: " << a << " - " << b << " is: " << resultSubtraction;
             break;
             case 3:
-            cout << "ingrese el valor de a" << endl;
-        cin >> a;
-        cout << "ingrese el valor de b" << endl;
-        cin >> b;
-        resultMultiplication = a * b;
-        cout << " el resultado es:" << resultMultiplication << endl;
+            cout << "You chose '*'. " << endl;
+            resultMultiplication = a * b;
+            cout<< "The result for:" << a << " * " << b << " is: " << resultMultiplication;
         break;
 
         case 4: 
-        cout << "ingrese el valor de a" << endl;
-        cin >> a;
-        cout << "ingrese el valor de b" << endl;
-        cin >> b;
+        cout<< "You chose '/'.";
         if (b == 0)
         {
             cout << " math error" << endl;
@@ -49,7 +43,7 @@ int main() {
         else
         {
             resultDivision = a / b;
-            cout << " el resultado es:" << resultDivision << endl;
+            cout << " The result for: " << a << " / " << b << " is: " << resultDivision;
             break;
         }
 
